@@ -1,0 +1,23 @@
+
+<div class="done" *ngIf="game.pickedCard !== undefined; else cards">
+    <div class="title round">You picked</div>
+    <div class="card" [class]="'card' + game.pickedCard"></div>
+    
+    <button class="replay" type="button" (click)="restart()">Replay</button>
+</div>
+
+<ng-template #cards>
+    <div class="title">Pick a card once and tell the magician 3 times which column contains the card.</div>
+
+    <div class="title round">Round {{game.round + 1}}</div>
+
+    <div class="title small">Click on the column which contains your picked card</div>
+
+    <div class="cards">
+        <div class="column" *ngFor="let stack of [0, 1, 2]" (click)="selectStack(stack)">
+            <ng-container *ngFor="let card of game.stacks[stack]">
+                <div class="card" [class]="'card' + card"></div>
+            </ng-container>
+        </div>
+    </div>
+</ng-template>
