@@ -1,3 +1,5 @@
+@import "../../base";
+
 .title {
     width: 200px;
     text-align: center;
@@ -57,8 +59,6 @@
     padding-right: 40px;
     padding-left: 40px;
 }
-
-$base: "/magix-games";
 
 .card0 { background-image: url($base + "/assets/cards/10_of_clubs.png"); }
 .card1 { background-image: url($base + "/assets/cards/10_of_diamonds.png"); }
