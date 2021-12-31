@@ -4,8 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "copy-scss": "cpx src/environments-prod/* src/environments",
     "docs": "cpx \"dist/magix-games/**\" docs -C",
-    "build": "ng build && npm run docs",
+    "build": "npm run copy-scss && ng build --base-href /magix-games/ && npm run docs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

@@ -1,4 +1,4 @@
-@import "../../base";
+@import "../../../environments/base-href";
 
 .title {
     width: 200px;
@@ -60,30 +60,30 @@
     padding-left: 40px;
 }
 
-.card0 { background-image: url($base + "/assets/cards/10_of_clubs.png"); }
-.card1 { background-image: url($base + "/assets/cards/10_of_diamonds.png"); }
-.card2 { background-image: url($base + "/assets/cards/10_of_hearts.png"); }
-.card3 { background-image: url($base + "/assets/cards/10_of_spades.png"); }
-.card4 { background-image: url($base + "/assets/cards/8_of_diamonds.png"); }
-.card5 { background-image: url($base + "/assets/cards/8_of_hearts.png"); }
-.card6 { background-image: url($base + "/assets/cards/8_of_spades.png"); }
-.card7 { background-image: url($base + "/assets/cards/9_of_clubs.png"); }
-.card8 { background-image: url($base + "/assets/cards/9_of_diamonds.png"); }
-.card9 { background-image: url($base + "/assets/cards/9_of_hearts.png"); }
-.card10 { background-image: url($base + "/assets/cards/9_of_spades.png"); }
-.card11 { background-image: url($base + "/assets/cards/ace_of_clubs.png"); }
-.card12 { background-image: url($base + "/assets/cards/ace_of_diamonds.png"); }
-.card13 { background-image: url($base + "/assets/cards/ace_of_hearts.png"); }
-.card14 { background-image: url($base + "/assets/cards/ace_of_spades2.png"); }
-.card15 { background-image: url($base + "/assets/cards/jack_of_clubs2.png"); }
-.card16 { background-image: url($base + "/assets/cards/jack_of_diamonds2.png"); }
-.card17 { background-image: url($base + "/assets/cards/jack_of_hearts2.png"); }
-.card18 { background-image: url($base + "/assets/cards/jack_of_spades2.png"); }
-.card19 { background-image: url($base + "/assets/cards/king_of_clubs2.png"); }
-.card20 { background-image: url($base + "/assets/cards/king_of_diamonds2.png"); }
-.card21 { background-image: url($base + "/assets/cards/king_of_hearts2.png"); }
-.card22 { background-image: url($base + "/assets/cards/king_of_spades2.png"); }
-.card23 { background-image: url($base + "/assets/cards/queen_of_clubs2.png"); }
-.card24 { background-image: url($base + "/assets/cards/queen_of_diamonds2.png"); }
-.card25 { background-image: url($base + "/assets/cards/queen_of_hearts2.png"); }
-.card26 { background-image: url($base + "/assets/cards/queen_of_spades2.png"); }
+.card0 { background-image: url($base-href + "/assets/cards/10_of_clubs.png"); }
+.card1 { background-image: url($base-href + "/assets/cards/10_of_diamonds.png"); }
+.card2 { background-image: url($base-href + "/assets/cards/10_of_hearts.png"); }
+.card3 { background-image: url($base-href + "/assets/cards/10_of_spades.png"); }
+.card4 { background-image: url($base-href + "/assets/cards/8_of_diamonds.png"); }
+.card5 { background-image: url($base-href + "/assets/cards/8_of_hearts.png"); }
+.card6 { background-image: url($base-href + "/assets/cards/8_of_spades.png"); }
+.card7 { background-image: url($base-href + "/assets/cards/9_of_clubs.png"); }
+.card8 { background-image: url($base-href + "/assets/cards/9_of_diamonds.png"); }
+.card9 { background-image: url($base-href + "/assets/cards/9_of_hearts.png"); }
+.card10 { background-image: url($base-href + "/assets/cards/9_of_spades.png"); }
+.card11 { background-image: url($base-href + "/assets/cards/ace_of_clubs.png"); }
+.card12 { background-image: url($base-href + "/assets/cards/ace_of_diamonds.png"); }
+.card13 { background-image: url($base-href + "/assets/cards/ace_of_hearts.png"); }
+.card14 { background-image: url($base-href + "/assets/cards/ace_of_spades2.png"); }
+.card15 { background-image: url($base-href + "/assets/cards/jack_of_clubs2.png"); }
+.card16 { background-image: url($base-href + "/assets/cards/jack_of_diamonds2.png"); }
+.card17 { background-image: url($base-href + "/assets/cards/jack_of_hearts2.png"); }
+.card18 { background-image: url($base-href + "/assets/cards/jack_of_spades2.png"); }
+.card19 { background-image: url($base-href + "/assets/cards/king_of_clubs2.png"); }
+.card20 { background-image: url($base-href + "/assets/cards/king_of_diamonds2.png"); }
+.card21 { background-image: url($base-href + "/assets/cards/king_of_hearts2.png"); }
+.card22 { background-image: url($base-href + "/assets/cards/king_of_spades2.png"); }
+.card23 { background-image: url($base-href + "/assets/cards/queen_of_clubs2.png"); }
+.card24 { background-image: url($base-href + "/assets/cards/queen_of_diamonds2.png"); }
+.card25 { background-image: url($base-href + "/assets/cards/queen_of_hearts2.png"); }
+.card26 { background-image: url($base-href + "/assets/cards/queen_of_spades2.png"); }
