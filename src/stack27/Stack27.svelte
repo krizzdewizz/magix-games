@@ -2,12 +2,12 @@
     import { newGame, turn } from "./stack27";
 
     let game = newGame();
-    let selectedStack: number;
+    let selectedStack = -1;
 
     function selectStack(index: number) {
         selectedStack = index;
         setTimeout(() =>{
-            selectedStack = undefined;
+            selectedStack = -1;
             game = turn(game, index);
         }, 300);
     }
