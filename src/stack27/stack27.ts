@@ -1,9 +1,9 @@
 import shuffleArray from "shuffle-array";
 
-type Card = number;
-type Stacks = Card[][];
+export type Card = number;
+export type Stacks = Card[][];
 
-interface Game {
+export interface Game {
     stacks: Stacks;
     round: number;
     pickedCard?: Card; // done if defined
