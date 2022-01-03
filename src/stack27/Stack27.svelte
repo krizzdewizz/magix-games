@@ -2,9 +2,14 @@
     import { newGame, turn } from "./stack27";
 
     let game = newGame();
+    let selectedStack: number;
 
     function selectStack(index: number) {
-        game = turn(game, index);
+        selectedStack = index;
+        setTimeout(() =>{
+            selectedStack = undefined;
+            game = turn(game, index);
+        }, 300);
     }
 
     function replay() {
@@ -33,7 +38,7 @@
 
     <div class="cards">
         {#each game.stacks as stack, stackIndex}
-            <div class="column" on:click={() => selectStack(stackIndex)}>
+            <div class="stack" class:selected="{stackIndex === selectedStack}" on:click={() => selectStack(stackIndex)}>
                 {#each stack as card}
                     <div class="card {'card' + card}" />
                 {/each}
@@ -64,11 +69,11 @@
         gap: 20px;
     }
 
-    .column {
+    .stack {
         border-radius: 2px;
         outline-offset: 5px;
 
-        &:hover {
+        &.selected {
             outline: 5px solid darkmagenta;
         }
     }
