@@ -10,8 +10,7 @@ export interface Game {
 }
 
 const CARDS_COUNT = 27;
-
-const CARDS = new Array(CARDS_COUNT).fill(0).map((_, i) => i);
+const CARDS: Card[] = new Array(CARDS_COUNT).fill(0).map((_, i) => i);
 
 function toStacks(cards: Card[]): Stacks {
     const stacks: Stacks = [[], [], []];
@@ -20,18 +19,18 @@ function toStacks(cards: Card[]): Stacks {
 }
 
 export function newGame(): Game {
-    const copy = [...CARDS];
+    const cards = [...CARDS];
 
-    shuffleArray(copy);
+    shuffleArray(cards);
 
     return {
-        stacks: toStacks(copy),
+        stacks: toStacks(cards),
         round: 0,
     };
 }
 
 export function turn({ stacks, round }: Game, stackWithCard: number): Game {
-    const otherIndices = [0, 1, 2].filter((s) => s !== stackWithCard);
+    const otherIndices = [0, 1, 2].filter(i => i !== stackWithCard);
 
     const newStacks = toStacks([
         ...stacks[otherIndices[0]],
